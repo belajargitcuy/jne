@@ -1,0 +1,487 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #aeaeae;
+    height: 1000px;
+}
+
+::-webkit-scrollbar{
+    width: 17px;
+}
+::-webkit-scrollbar-track{
+    background-color: #ddd;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(red, darkblue);
+}
+
+/* header */
+header{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #666;
+}
+
+nav{
+    width: 60%;
+    display: flex;
+}
+
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    cursor: pointer;
+}
+li:hover{
+    color: rgb(218, 37, 37);
+}
+
+li input{
+    height: 35px;
+    border-radius: 50px;
+    border: 2px solid rgba(180, 180, 180, 0.507);
+    padding-left: 10px;
+}
+
+/* gambar */
+aside{
+    width: 100%;
+    height: 386px;
+}
+
+aside img{
+    width: 100%;
+    height: 100%;
+}
+
+/* main */
+main{
+    width: 100%;
+    height: 181px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main div input{
+    height: 39px;
+    border-radius: 5px;
+    border: 1px solid rgba(180, 180, 180, 0.507);
+    padding: 10px;
+    box-sizing: border-box;
+}
+main div button{
+    height: 39px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main div h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.lacak-tarif{
+    width: 71%;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* .lacak-tarif div{
+    width: 100%;
+} */
+
+.lacak{
+    background-color: rgba(224, 7, 7, 0.842);
+    color: white;
+    width: 46%;
+    padding-left: 70px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.lacak .lacak2{
+    margin: 5px 0;
+}
+.lacak input{
+    width: 232px;
+}
+.lacak button{
+    background-color:#31b184;
+    color: white;
+    width: 100px;
+    margin-left: 10px;
+}
+.lacak button:hover{
+    background-color: #2a9b73;
+}
+.lacak p{
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.87);
+    font-style: italic;
+}
+
+.tarif{
+    background-color: white;
+    width: 54%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 15px;
+    box-sizing: border-box;
+    box-shadow:  3px 0px 9px  0px rgba(107, 107, 107, 0.808);
+    z-index: 1;
+}
+.tarif div{
+    display: flex;
+}
+.tarif .tarif2{
+    width: 100%;
+    margin:5px 0;
+    /* display: flex;
+    justify-content:flex-start; */
+}
+.tarif div input{
+    width: 150px;
+    margin-right: 10px;
+}
+.tarif div input:nth-child(3){
+    width: 55px;
+    text-align: center;
+}
+.tarif .tarif2 button{
+    width: 85px;
+    background-color: rgba(224, 7, 7, 0.842);
+    color: white;
+    margin-left: 1px;
+}
+.tarif .tarif2 button:hover{
+    background-color: rgba(197, 16, 16, 0.842);
+}
+.tarif .tarif3{
+    width: 100%;
+    /* display: flex;
+    justify-content: flex-start; */
+    /* margin-right: 110px; */
+}
+.tarif p{
+    font-style: italic;
+    color:rgba(87, 87, 87, 0.692);
+    font-size: 12px;
+    margin-right: 75px;
+}
+.tarif p:nth-child(2){
+    margin-right: 45px;
+}
+
+.titik-layanan{
+    width: 29%;
+    background-color: white;
+    padding-left: 25px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.titik-layanan button{
+    background-color: rgba(224, 7, 7, 0.842);
+    color: white;
+    width: 260px;
+    cursor: pointer;
+    margin: 5px 0;
+}
+.titik-layanan button:hover{
+    background-color: rgba(197, 16, 16, 0.842);
+}
+
+.layanan3{
+    font-style: italic;
+    font-size: 12px;
+    color: rgba(87, 87, 87, 0.692);
+}
+
+/* footer */
+footer{
+    background-color: rgb(3, 3, 139);
+    width: 100%;
+    height: 350px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    padding: 50px;
+    box-sizing: border-box;
+}
+footer div h4{
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.774);
+    margin-bottom: 5px;
+}
+footer div h4:first-child{
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+footer .alamat{
+    width: 30%;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.774);
+}
+footer .alamat .sosmed button{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(10, 10, 255);
+    border-radius:50%;
+    border: none;
+    cursor: pointer;
+}
+footer .navfooter{
+    width: 100%;
+    height: 120px;
+
+    display: flex;
+    justify-content: space-between;
+}
+footer .navfooter h4{
+    cursor: pointer;
+}
+footer .navfooter div{
+    /* justify-content: space-between; */
+    flex-direction: column;
+    display: flex;
+}
+footer .navfot-23{
+    width: 70%;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+footer .download-link{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: end;
+    
+}
+footer .download-link button{
+    height: 43px;
+    width: 200px;
+    background-color: #31b184;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+footer .download-link button:hover{
+    background-color: #2a9b73;
+}
+footer .download-link button h4{
+    margin-bottom: 0;
+}
+footer .download-link img{
+    max-width: 18%;
+    height: 43px;
+    margin-left:10px;
+    cursor: pointer;
+}
+
+body .footer2{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body .footer2 .copyright{
+    background-color: white;
+    color: gray;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+body .footer2 .copyright p{
+    margin-left: 50px;
+}
+body .footer2 .customer-care{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    width: 50%;
+    height: 100%;
+    background-color: rgba(224, 7, 7, 0.842);
+    color: white;
+}
+
+
+/* Responsive area */
+
+@media screen and (max-width: 768px) {
+    body{
+        width: 100%;
+    }
+    nav{
+        display: none;
+    }
+    aside{
+        width: 100%;
+        height: 200px;
+    }
+    aside img{
+        width: 100%;
+        height: 200px;
+    }
+    main{
+        width: 100%;
+        height: 500px;
+        display: inline-block;
+    }
+    main div{
+        width: 100%;
+        display: flex;
+        /* height: 100px; */
+        flex-flow: column;
+    }
+    main .lacak-tarif{
+        width: 100%;
+        height:360px;
+        /* display: flex; */
+        /* display: inline-block; */
+        /* flex-flow: column wrap; */
+    }
+    main .lacak-tarif div{
+        width: 100%;
+        flex-direction:row;
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    main .lacak-tarif .lacak{
+        flex-direction: column;
+        /* padding: 0; */
+        height: 80%;
+        /* align-items: center; */
+    }
+    main .lacak-tarif .lacak .lacak2{
+        margin: 0;
+        padding: 0;
+        height: 30%;
+    }
+    main .lacak-tarif .lacak .lacak1{
+        margin: 0;
+        padding: 0;
+        height: 25%;
+    }
+    main .lacak-tarif .lacak .lacak3{
+        margin: 0;
+        padding: 0;
+        height: 20%;
+    }
+    main .lacak-tarif .tarif{
+        flex-direction: column;
+        height: 100%;
+    }
+    main .lacak-tarif .tarif .tarif2{
+        margin: 0;
+        padding: 0;
+        height: 25%;
+    }
+    main .lacak-tarif .tarif .tarif1 {
+        margin: 0;
+        padding: 0;
+        height: 25%;
+    }
+    main .lacak-tarif .tarif .tarif3{
+        margin: 0;
+        padding: 0;
+        height: 15%;
+    }
+    main .titik-layanan{
+        width: 100%;
+        height: 180px;
+        padding: 0;
+    }
+    main .titik-layanan div{
+        align-items: center;
+    }
+
+    footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 590px;
+    }
+    footer .alamat{
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+    }
+    footer .navfot-23{
+        width: 70%;
+        margin-top: 10px;
+    }
+    footer .navfot-23 .download-link img{
+        min-width: 100%;
+        height: 49px;
+        margin-top: 5px;
+    }
+    footer .navfooter{
+        display: none;
+    }
+    footer .download-link{
+        width: 70%;
+        justify-self: center;
+        align-self: center;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
+    body .footer2{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        height: 160px;
+    }
+    body .footer2 .copyright{
+        width: 100%;
+        height: 80px;
+        justify-content: center;
+        text-align: center;
+    }
+    body .footer2 .copyright p{
+        margin-left: 0;
+    }
+    body .footer2 .customer-care{
+        width: 100%;
+        height: 80px;
+    }
+}
+
