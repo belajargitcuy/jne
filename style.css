@@ -449,6 +449,9 @@ body .footer2 .customer-care{
         width: 70%;
         margin-top: 10px;
     }
+    footer .navfot-23 .download-link button{
+        min-width: 100%;
+    }
     footer .navfot-23 .download-link img{
         min-width: 100%;
         height: 49px;
