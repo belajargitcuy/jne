@@ -341,7 +341,7 @@ body .footer2 .customer-care{
 
 /* Responsive area */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
     body{
         width: 100%;
     }
